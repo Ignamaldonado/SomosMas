@@ -1,0 +1,63 @@
+.organizationForm {
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    border: 1px solid var(--light-blue-color);
+    padding: 12px;
+    border-radius: 5px;
+    margin: 12px;
+}
+
+.organizationForm input {
+    padding: 8px;
+    margin: 2px 0;
+    border: 0;
+    border: .5px solid var(--light-color);
+}
+
+.sectionTitle {
+    margin: 24px 0 0 0;
+}
+
+.legend {
+    font-size: 14px;
+    margin: 8px 0 0 0;
+    padding: 0;
+}
+
+.button {
+    border: 0;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+.button:hover {
+    background-color: var(--light-blue-color);
+    color: white;
+}
+
+.ckEditor {
+    margin: 2px 0;
+}
+
+.uploadImage {
+    padding: 8px;
+    margin: 2px 0;
+    background-color: white;
+    cursor: pointer;
+    border: .5px solid var(--light-color);
+}
+
+.uploadImage:hover {
+    background-color: var(--light-color);
+    transition: all 0.1s ease-in-out;
+}
+
+.image {
+    margin: 2px 0;
+    max-width: 300px;
+}
+
+input[type=file] {
+    display: none;
+}

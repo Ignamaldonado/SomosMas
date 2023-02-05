@@ -1,0 +1,24 @@
+.cardContainer {
+  background-color: #fffc9d;
+  padding: 1.5rem;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.image {
+  height: 130px;
+  width: 130px;
+  object-fit:cover;
+  border-radius: 50%;
+}
+
+.infoContainer {
+  padding-top: 1rem;
+}
+
+.truncate {
+  max-height: 190px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

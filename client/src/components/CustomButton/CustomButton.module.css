@@ -1,0 +1,11 @@
+.button {
+    color: var(--primary-color);
+    border-color: var(--circle-color);
+    background-color: var(--secondary-color);
+    align-self: center;
+}
+
+.button:hover {
+    border-color: var(--triangle-color) !important;
+    background-color: var(--triangle-color) !important;
+}

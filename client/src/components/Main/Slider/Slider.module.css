@@ -1,0 +1,43 @@
+.legend {
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.70);
+    padding: 4px;
+    color: white;
+    text-align: center;
+}
+
+.arrowRight {
+    position: absolute;
+    z-index: 2;
+    top: 45%;
+    right: 20px;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.arrowLeft {
+    position: absolute;
+    z-index: 2;
+    top: 45%;
+    left: 20px;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.arrowRight:hover {
+    opacity: 1;
+}
+
+.arrowLeft:hover {
+    opacity: 1;
+}
+
+.imgCarousel {
+    width: 350px;
+    height: 450px;
+    border-radius: 10px;
+}

@@ -1,0 +1,151 @@
+.hero {
+    padding: 1rem;
+    display: flex;
+    column-gap: 1rem;
+}
+
+.welcome_div {
+    flex: 0 0 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+    text-align: initial;
+}
+
+/* .welcome_div div {
+    width: 185px;
+    margin: 0 auto;
+} */
+
+.title {
+    margin: 0 0 10px 0;
+    font-size: 35px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black
+}
+
+.testimonialsCardContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+@media (max-width: 768px) {
+    .testimonialsCardContainer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        text-align: center;
+    }
+}
+
+.welcome_text {
+    text-align: initial;
+    line-height: 1.8rem;
+}
+
+.main_button {
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 0.8rem;
+    margin: 1rem auto;
+    border: 1px solid var(--triangle-color);
+    border-radius: 10px;
+    background-color: var(--triangle-color);
+    cursor: pointer;
+    box-shadow: 2px 2px 10px 1px rgb(0 0 0 / 30%);
+    color: var(--secondary-color);
+    transition: all 400ms ease;
+}
+
+.main_button:hover {
+    background-color: var(--triangle-color-hover) !important;
+    border: 1px solid var(--triangle-color-hover) !important;
+}
+
+.slider_div {
+    padding-right: 2rem;
+}
+
+.newsletter_title_container {
+    padding: 1rem 3rem;
+}
+
+.newsletter_title {
+    text-align: initial;
+    margin: 12px 0;
+    font-size: 35px;
+}
+
+@media (max-width: 768px) {
+    .newsletter_title {
+        text-align: center;
+    }
+}
+
+.news {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+}
+
+@media (max-width: 970px) {
+   .hero {
+    flex-direction: column;
+   }
+   .slider_div {
+    padding-left: 2rem;
+   }
+   .news {
+    grid-template-columns: repeat(1, 1fr);
+   }
+}
+
+@media (max-width: 580px) {
+    .hero {
+        margin: 0;
+    }
+    .newsletter_title_container {
+        margin: 0;
+    }
+    .news {
+        margin: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .hero {
+        margin: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .welcome_div {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .slider_div {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .newsletter_title_container {
+        margin: 0;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .news {
+        margin: 0;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+}
+
+p {
+    font-size: 18px;
+    color: #31373D;
+    text-align: justify;
+}

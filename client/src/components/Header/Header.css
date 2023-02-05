@@ -1,0 +1,208 @@
+.header {
+    background-color: var(--light-color);
+    display: flex;
+    position:fixed;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
+    z-index: 5;
+}
+
+.account-verification{
+    position: fixed;
+    width: 100%;
+    margin-left: -50%;
+    background-color: red;
+    color: white;
+    height: 18px;
+    text-align: center;
+    z-index: 6;
+    top: 80px;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
+}
+
+.hidden {
+    height: 80px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 140px;
+    height: 100%; 
+}
+
+.logo img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    max-width: 750px;
+    width: 100%;
+}
+
+nav button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    transition: all 0.1s ;
+ 
+    padding-bottom: 30px;
+    padding-top:32px;
+}
+
+.home-button {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+nav button:hover {
+    border-bottom: 3px solid var(--circle-color);
+}
+
+.active{
+    border-bottom: 3px solid var(--circle-color-hover);
+}
+
+
+.account {
+    display: flex;
+    flex-shrink: 0;
+}
+
+.register, 
+.login {
+    margin: 7px 15px 7px 15px;
+    border-radius: 10px;
+    margin-top: 23px;
+    padding: 10px;
+
+}
+
+.register {
+    border: 1px solid var(--triangle-color);
+    background-color: var(--triangle-color);
+    color: white;
+    transition: all 0.2s ease;
+}
+
+.register:hover {
+    background-color: var(--triangle-color-hover);
+    border: 1px solid var(--triangle-color-hover) !important;
+}
+
+.login {
+    border: 1px solid var(--circle-color);
+    transition: all 0.2s ease
+}
+
+.login:hover {
+    background-color: var(--circle-color-hover);
+    color: white;
+    border-bottom: none !important;
+}
+
+.login-flex {
+    display: flex;
+    padding: 5px 10px !important;
+}
+
+.account-button-image {
+    width: 40px;
+    height: 38px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.account-button-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.account-button-text {
+    height: 38px;
+    margin-left: 5px;
+    line-height: 38px;
+    text-decoration: none;
+}
+
+.account-button-text p {
+    text-decoration: none;
+}
+
+.burguer-container {
+    display: none;
+}
+
+.burguer-menu {
+    display:none;
+}
+
+.burguer-list {
+    position: absolute;
+    background-color: var(--light-color);
+    border: 0px 0px 1px 1px solid rgba(0,0,0,0.5);
+    border-radius: 10px 0px 0px 10px;
+    padding: 10px;
+    width: 150px;
+    right: 0px;
+    top: 66px;
+    z-index: 1;
+}
+
+.burguer-list li {
+    list-style: none;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    transition: all .2s ease-in-out;
+}
+
+.burguer-list li:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.burguer-register {
+    color: var(--triangle-color);
+}
+
+.burguer-login {
+    color: var(--circle-color);
+}
+
+.burguer-list a {
+    text-decoration: none;
+}
+
+@media (max-width: 800px) {
+    nav, .account {
+        display: none;
+    }
+    .burguer-container {
+        display: block;
+    }
+    .burguer-menu {
+        display: block;
+        margin-top: 22px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+}
+
+.profile-button {
+    font-weight: bold !important;
+}

@@ -1,0 +1,26 @@
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    width: 100%;
+    padding: 0 6px;
+}
+
+.contactForm input, textarea {
+    padding: 8px;
+    margin: 2px 0;
+    border: 0;
+    border: .5px solid var(--light-color);
+}
+
+input[type=submit] {
+    border: 0;
+    color: var(--primary-color);
+    padding: 12px;
+    transition: all 0.2s ease-in-out;
+}
+
+input[type=submit]:hover {
+    background: var(--triangle-color);
+    color: var(--secondary-color);
+}

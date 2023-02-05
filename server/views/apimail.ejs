@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <title>Send mail from api</title>
+</head>
+<body>
+    <H1>Bienvenido a la api para enviar emails de somos mas!</H1>
+    
+    <% if (locals && locals.errors) { %>
+        <% for (let error in errors) { %>
+            <p class="email-errors"> <%= errors[error].msg %> </p>
+        <% } %>
+    <% } %> 
+
+    <form action="/api/mail/send" method="post">
+        <div class="input-container">
+        <label for="to">Persona a la que enviar email</label> <br>
+        <input type="email" name="to" id="to" placeholder="Email" value="<%= locals.oldBody && oldBody.to ? oldBody.to : '' %>" /> 
+        </div>
+
+        <div class="input-container">
+            <label for="subject">Razon</label> <br>
+            <input type="text" name="subject" id="subject" placeholder="Razon" value="<%= locals.oldBody && oldBody.subject ? oldBody.subject : '' %>"> 
+        </div>
+
+        <div class="input-container">
+            <label for="text">Texto a enviar</label> <br>
+            <textarea type="text" name="text" id="text" placeholder="Texto"><%= locals.oldBody && oldBody.text ? oldBody.text : '' %></textarea>
+        </div>
+
+        <button type="submit"> ENVIAR </button>
+    </form>
+</body>
+</html>

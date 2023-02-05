@@ -1,0 +1,19 @@
+.container {
+  width: 100%;
+}
+
+.listItem {
+  display: grid;
+  grid-template-columns: 1fr 5fr .2fr;
+  column-gap: 1rem;
+}
+
+.button {
+  padding: 0.5rem;
+  background-color: #db5752;
+  border: 1px solid #db5752;
+  border-radius: 5px;
+  color: white;
+  transition: 400ms;
+  height: 100%;
+}

@@ -1,0 +1,28 @@
+.container{
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+}
+.name{
+
+}
+.openButton{
+    all: unset
+}
+.plus{
+    transform: rotate(0deg);
+    transition: all 0.3s ease;
+}
+.cross{
+    transform: rotate(45deg);
+    transition: all 0.3s ease;
+}
+.email{}
+.phone{}
+.message{
+    padding: 10px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    white-space: pre-wrap;
+}

@@ -1,0 +1,119 @@
+.sidebarContainer{
+    width: 250px;
+    padding: 14px;
+    background-color: ghostwhite;
+}
+.sidebarLogo{
+    width:100px
+}
+
+.sidebarItem{
+    margin: 5px 0;
+    text-align: left;
+}
+
+.sidebarButton{
+    all:unset;
+    display: block;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: gray;
+    width:100%;
+    border-radius:5px;
+    cursor: pointer;
+}
+
+.sidebarButton:hover{
+    background-color: rgb(215, 234, 241);
+    color: darkslategray;
+
+}
+
+.sidebarButton:active{
+    background-color: lightblue;
+    color: darkslategray;
+
+}
+
+.sidebarButtonSelected{
+    background-color: rgb(80, 126, 141);
+    color: white;
+}
+
+.sidebarButtonSelected:hover{
+    background-color: rgb(80, 126, 141);
+    color: white;
+}
+
+.sidebarButtonSelected:active{
+    background-color: rgb(80, 126, 141);
+    color: white;
+}
+
+
+.sidebarIcon{
+    margin-bottom: 3px;
+    margin-right: 10px;
+}
+
+/* .sidebarText{
+
+} */
+
+
+.sidebarLogoutButton{
+    all:unset;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: darkslategray;
+    border: 1px solid darkslategray;
+    width:100%;
+    border-radius:5px;
+}
+
+.sidebarLogoutButton:hover{
+    background-color: darkslategray;
+    color:white
+}
+
+.contact-container {
+    display:flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+    margin: 10px;
+    padding: 12px;
+    border: 1px solid lightgrey
+}
+
+.contact-phone,
+.contact-name,
+.contact-email,
+.contact-message {
+    /* display:block;
+    text-align: left; */
+    /* width: 15%; */
+    margin: 0;
+}
+
+.panelTitle{
+    padding: 30px 0 0 50px;
+}
+
+
+.checkInput {
+    clear: left;
+}
+  
+.form-switch.form-switch-sm {
+    margin-bottom: 0.5rem; /* JUST FOR STYLING PURPOSE */
+}
+  
+.form-switch.form-switch-sm .checkInput {
+    height: 1rem;
+    width: calc(1rem + 0.75rem);
+    border-radius: 2rem;
+}

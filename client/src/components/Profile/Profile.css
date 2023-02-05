@@ -1,0 +1,64 @@
+.profile-container {
+    width: 90%;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+    padding: 20px
+}
+
+.profile-image-container {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 200px;
+    overflow: hidden;
+}
+
+.profile-image-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.profile-container h3 {
+    margin: 20px;
+    font-weight: bold
+}
+
+.profile-container h3 span {
+    display: block;
+    font-weight: 300
+}
+
+.edit-btn, 
+.delete-btn {
+    margin: 7px 15px 7px 15px;
+    border-radius: 10px;
+    margin-top: 23px;
+    padding: 10px;
+
+}
+
+.edit-btn {
+    border: 1px solid var(--circle-color);
+    transition: all 0.2s ease;
+    background-color: var(--circle-color);
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #81A9D4;
+    color: white;
+    border-bottom: none !important;
+}
+
+.delete-btn {
+    border: 1px solid var(--triangle-color);
+    background-color: var(--triangle-color);
+    color: white;
+    transition: all 0.2s ease;
+}
+
+.delete-btn:hover {
+    background-color: var(--triangle-color-hover);
+    border: 1px solid var(--triangle-color-hover) !important;
+}
